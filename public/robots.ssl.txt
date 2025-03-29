@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /admin/login
+Disallow: /ppm_pdf
+Disallow: /loan_ppm_pdf
+Disallow: /recurring_investment
+Disallow: /psl_application_disclosure
+Disallow: /company_query
+Disallow: /school_query
+Disallow: /signup_consents
+Disallow: /overview
+
+Sitemap: https://www.upstart.com/sitemap.xml
+Sitemap: https://www.upstart.com/credit_score_sitemap.xml

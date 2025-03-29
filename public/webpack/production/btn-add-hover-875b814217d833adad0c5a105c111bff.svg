@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor" fill-rule="evenodd">
+    <rect stroke="#009692" stroke-width="1.5" fill="#00b1ac" x=".75" y=".75" width="30.5" height="30.5" rx="15.25"/>
+    <path d="M17.6 10.07v4.8h4.8v3.2h-4.801l.001 4.8h-3.2v-4.8H9.6v-3.2h4.8v-4.8h3.2z" fill="#00A19A"/>
+  </g>
+</svg>

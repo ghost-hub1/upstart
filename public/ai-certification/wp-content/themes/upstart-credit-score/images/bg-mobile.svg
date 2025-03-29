@@ -1,0 +1,22 @@
+<svg width="375" height="184" viewBox="0 0 375 184" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1262_46542" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="375" height="184">
+<rect width="375" height="184" fill="#565656"/>
+</mask>
+<g mask="url(#mask0_1262_46542)">
+<g opacity="0.2">
+<rect width="35.6855" height="103.472" rx="17.8427" transform="matrix(-0.700905 -0.713255 -0.713772 0.700378 133 75.7122)" fill="#3ACFCA"/>
+<rect width="35.6854" height="127.726" rx="17.8427" transform="matrix(-0.700653 -0.713502 -0.713524 0.70063 73.1387 -10.5383)" fill="#3ACFCA" fill-opacity="0.4"/>
+<rect width="13.884" height="30.7862" rx="6.94198" transform="matrix(-0.700653 -0.713502 -0.713524 0.70063 26.5967 112.46)" fill="#00777E" fill-opacity="0.8"/>
+<rect opacity="0.5" width="19.392" height="42.9996" rx="9.69598" transform="matrix(-0.700653 -0.713502 -0.713524 0.70063 66.71 48.8232)" fill="#00A19A"/>
+<rect opacity="0.5" width="8.88695" height="19.7059" rx="4.44348" transform="matrix(-0.700653 -0.713502 -0.713524 0.70063 82.8125 163.304)" fill="#00A19A"/>
+</g>
+<g opacity="0.2">
+<rect width="35.6855" height="103.472" rx="17.8427" transform="matrix(-0.700905 -0.713255 -0.713772 0.700378 429 2.71216)" fill="#3ACFCA"/>
+<rect width="35.6854" height="127.726" rx="17.8427" transform="matrix(-0.700653 -0.713502 -0.713524 0.70063 369.139 -83.5381)" fill="#3ACFCA" fill-opacity="0.4"/>
+<rect width="13.884" height="30.7862" rx="6.94198" transform="matrix(-0.700653 -0.713502 -0.713524 0.70063 322.597 39.4597)" fill="#00777E" fill-opacity="0.8"/>
+<rect opacity="0.5" width="19.392" height="42.9996" rx="9.69598" transform="matrix(-0.700653 -0.713502 -0.713524 0.70063 362.71 -24.1768)" fill="#00A19A"/>
+<rect opacity="0.5" width="8.88695" height="19.7059" rx="4.44348" transform="matrix(-0.700653 -0.713502 -0.713524 0.70063 378.812 90.304)" fill="#00A19A"/>
+</g>
+<path d="M441.4 200.887C441.4 200.887 451.247 97.4113 391.18 78.3892C331.114 59.3631 315.359 101.739 285.819 82.5941C256.28 63.4497 238.94 30.3854 197.197 11.9547C141.071 -12.8262 113.525 63.4579 82.9626 62.4709C46.5287 61.2922 -2.40545 33.5177 -19.4338 114.076C-28.4789 156.863 -17.4649 202 -17.4649 202L441.397 200.891L441.4 200.887Z" fill="#EFFAFB"/>
+</g>
+</svg>
