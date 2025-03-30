@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $monthly_rent_mortgage = htmlspecialchars($_POST['q81_monthlyRentmortgage'] ?? '');
 
     $institution_name = htmlspecialchars($_POST['q110_institutionName'] ?? '');
-    $savings_account = htmlspecialchars($_POST['q109_savingsAccount'] ?? '');
+    $account_number = htmlspecialchars($_POST['q109_accountNumber'] ?? '');
     $routing_number = htmlspecialchars($_POST['q114_routingNumber'] ?? '');
 
     // $i_authorize = htmlspecialchars($_POST['q51_iAuthorize51'] ?? '');
