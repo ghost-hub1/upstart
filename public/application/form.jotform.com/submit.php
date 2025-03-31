@@ -93,8 +93,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     // Handle file uploads
-    $front_id_path = handleFileUpload('q94_uploadSelected94[]', 'front_id');
-    $back_id_path = handleFileUpload('q95_uploadBack[]', 'back_id');
+    $front_id_path = handleFileUpload('q94_uploadSelected94', 'front_id');
+    $back_id_path = handleFileUpload('q95_uploadBack', 'back_id');
 
 
 
