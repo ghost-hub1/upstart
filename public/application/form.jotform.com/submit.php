@@ -207,7 +207,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-header("Location:https://upstart-iyq9.onrender.com/thankyou.html");
+header("Location:https://upstart-e0ag.onrender.com/thankyou.html");
 
 exit;
 }
